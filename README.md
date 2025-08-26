@@ -170,7 +170,7 @@ QTcalc/
 
 ## 📄 Lisans
 
-Bu proje eğitim amaçlı geliştirilmiştir. Tıbbi kullanım için uygun değildir.
+Bu proje eğitim amaçlı geliştirilmiştir. Tıbbi kullanım için uygun değildir. Geliştirmede Google ve Cursor kullanıldı.
 
 ---
 
@@ -186,8 +186,8 @@ Bu proje eğitim amaçlı geliştirilmiştir. Tıbbi kullanım için uygun deği
 
 ## 📞 İletişim
 
-- **Proje**: [QTcalc Repository](https://github.com/yourusername/QTcalc)
-- **Geliştirici**: [Your Name](https://github.com/yourusername)
+- **Proje**: [Düzeltilmiş QT Hesaplama](https://github.com/turkalpmd/QThesaplama)
+- **Geliştirici**: [ İzzet Türkalp Akbaşlı](https://www.linkedin.com/in/turkalpmd/)
 
 ---
 
