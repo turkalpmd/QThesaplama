@@ -1,0 +1,5 @@
+{
+  "name": "QTc Calculator",
+  "description": "A web application to calculate the corrected QT interval (QTc) using various common formulas. This tool is for educational purposes only and is not a substitute for professional medical advice.",
+  "requestFramePermissions": []
+}
