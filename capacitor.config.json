@@ -1,5 +1,5 @@
 {
-  "appId": "com.example.app",
-  "appName": "qtc-calculator",
+  "appId": "com.turkalpmd.qtc",
+  "appName": "QTcalc",
   "webDir": "dist"
 }
