@@ -1,4 +1,4 @@
-package com.example.app;
+package com.turkalpmd.qtc;
 
 import com.getcapacitor.BridgeActivity;
 
