@@ -1,0 +1,4 @@
+name = "my-worker"
+main = "dist/index.js"          
+compatibility_date = "2025-08-26"
+# Update web app: npx wrangler pages deploy dist 

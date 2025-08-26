@@ -1,31 +1,31 @@
 <div align="center">
-  <img src="QT-RRinterval.png" alt="QTcalc Banner" width="800" height="400" style="border-radius: 10px;" />
+  <img src="ECGsegments.jpg" alt="QTcalc Afişi" width="800" height="400" style="border-radius: 10px;" />
   
-  # QTcalc - QTc Hesaplayıcı
+  # QTcalc – QTc Hesaplayıcı
   
   [![Capacitor](https://img.shields.io/badge/Capacitor-7.4.3-blue.svg)](https://capacitorjs.com/)
   [![React](https://img.shields.io/badge/React-19.1.1-blue.svg)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-6.2.0-purple.svg)](https://vitejs.dev/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue.svg)](https://www.typescriptlang.org/)
   
-  **EKG'de QT aralığını düzeltmek için kullanılan profesyonel tıbbi araç**
+  **EKG’de QT aralığının düzeltilmiş değerini (QTc) hesaplayan profesyonel klinik yardımcı araç**
 </div>
 
 ---
 
 ## 📱 Uygulama Hakkında
 
-**QTcalc**, kardiyologlar, acil servis doktorları ve tıp öğrencileri için geliştirilmiş, EKG'de QT aralığını düzeltmek için kullanılan modern bir web ve mobil uygulamadır.
+**QTcalc**, kardiyologlar, acil tıp hekimleri ve tıp öğrencileri için tasarlanmış modern bir web ve mobil uygulamadır. EKG’de QT aralığını çeşitli formüllerle düzelterek **QTc** hesaplamasını hızlı ve anlaşılır biçimde sunar.
 
 ### ✨ Özellikler
 
-- 🩺 **Çoklu Formül Desteği**: Bazett, Fridericia, Framingham, Hodges, Rautaharju
-- 👥 **Cinsiyet Bazlı Hesaplama**: Erkek/Kadın için ayrı referans değerleri
-- 📊 **Anlık Sonuç**: RR ve QT değerlerine göre anında QTc hesaplama
-- 🎯 **Yorum Sistemi**: Hesaplanan değere göre klinik yorum
-- 💊 **İlaç Uyarıları**: QTc uzatan ilaçlar hakkında bilgi
-- 📱 **Responsive Tasarım**: Tüm cihazlarda mükemmel görünüm
-- 🔗 **CredibleMeds Entegrasyonu**: Güvenilir ilaç bilgisi kaynağı
+- 🩺 **Birden Çok Formül**: Bazett, Fridericia, Framingham, Hodges, Rautaharju
+- 👥 **Cinsiyete Göre Referans**: Erkek/Kadın için ayrı eşik ve yorumlar
+- 📊 **Anlık Hesaplama**: RR ve QT girdilerine göre eşzamanlı QTc sonucu
+- 🎯 **Klinik Yorum**: Sonuca göre otomatik ve kısa değerlendirme
+- 💊 **İlaç Uyarıları**: QTc’yi uzattığı bilinen ilaçlara dair bilgi
+- 📱 **Duyarlı Arayüz**: Tüm cihazlarda temiz ve akıcı görünüm
+- 🔗 **CredibleMeds Entegrasyonu**: Güvenilir ilaç veri kaynağına bağlantı
 
 ---
 
@@ -33,76 +33,75 @@
 
 ### Gereksinimler
 
-- **Node.js** (v18 veya üzeri)
+- **Node.js** (v18+)
 - **npm** veya **yarn**
-- **Android Studio** (mobil geliştirme için)
+- **Android Studio** (mobil derleme için)
 
-### 1. Projeyi Klonlayın
+### 1) Projeyi Klonlayın
 
 ```bash
 git clone https://github.com/yourusername/QTcalc.git
 cd QTcalc
-```
+````
 
-### 2. Bağımlılıkları Yükleyin
+### 2) Bağımlılıkları Yükleyin
 
 ```bash
 npm install
 ```
 
-### 3. Geliştirme Sunucusunu Başlatın
+### 3) Geliştirme Sunucusunu Başlatın
 
 ```bash
 npm run dev
 ```
 
-Uygulama http://localhost:5173 adresinde açılacaktır.
+Uygulama **[http://localhost:5173](http://localhost:5173)** adresinde çalışacaktır.
 
 ---
 
-## 🏗️ Build ve Dağıtım
+## 🏗️ Derleme ve Dağıtım
 
-### Web Build
+### Web Derleme
 
 ```bash
 npm run build
 ```
 
-### Capacitor ile Mobil Build
+### Capacitor ile Mobil Derleme
 
 ```bash
 # Android platformunu ekleyin
 npm run cap:add:android
 
-# Projeyi build edin ve senkronize edin
+# Derleyin ve senkronize edin
 npm run cap:build
 
-# Android Studio'da açın
+# Android Studio’da açın
 npm run cap:open:android
 ```
 
-### Kullanılabilir Scriptler
+### Kullanılabilir Komutlar
 
-- `npm run dev` - Geliştirme sunucusu
-- `npm run build` - Production build
-- `npm run cap:sync` - Capacitor senkronizasyonu
-- `npm run cap:build` - Build ve senkronizasyon
-- `npm run cap:open:android` - Android Studio'da aç
+* `npm run dev` – Geliştirme sunucusu
+* `npm run build` – Üretim (production) derlemesi
+* `npm run cap:sync` – Capacitor senkronizasyonu
+* `npm run cap:build` – Derleme + senkronizasyon
+* `npm run cap:open:android` – Android Studio’da açma
 
 ---
 
 ## 📱 Mobil Uygulama
 
-QTcalc, Capacitor kullanılarak mobil platformlara taşınabilir:
+QTcalc, **Capacitor** altyapısıyla mobil platformlara taşınabilir:
 
-- **Android**: APK ve App Bundle (.aab) desteği
-- **iOS**: Xcode ile build edilebilir
-- **PWA**: Progressive Web App olarak kullanılabilir
+* **Android**: APK ve App Bundle (.aab) oluşturma
+* **iOS**: Xcode ile derleme
+* **PWA**: Progressive Web App olarak kullanılabilir
 
-### Android Build
+### Android (Release) Derleme
 
 ```bash
-# Release APK oluşturma
 cd android
 ./gradlew assembleRelease
 ```
@@ -111,86 +110,88 @@ cd android
 
 ## 🧮 Kullanım
 
-### 1. Hasta Bilgileri
-- **Yaş** girin
-- **Cinsiyet** seçin (Erkek/Kadın)
+### 1) Hasta Bilgileri
 
-### 2. EKG Değerleri
-- **RR aralığı** (ms cinsinden)
-- **QT aralığı** (ms cinsinden)
+* **Yaş** girin
+* **Cinsiyet** seçin (Erkek/Kadın)
 
-### 3. Formül Seçimi
-- **Bazett**: En yaygın kullanılan formül
-- **Fridericia**: Alternatif formül
-- **Framingham**: Yaş bazlı düzeltme
-- **Hodges**: RR bazlı düzeltme
-- **Rautaharju**: Özel algoritma
+### 2) EKG Değerleri
 
-### 4. Sonuç
-- **Düzeltilmiş QT (QTc)** değeri
-- **Klinik yorum** (Normal, Uzun, Çok Uzun)
-- **Referans değerler**
+* **RR aralığı** (ms)
+* **QT aralığı** (ms)
+
+### 3) Formül Seçimi
+
+* **Bazett**, **Fridericia**, **Framingham**, **Hodges**, **Rautaharju**
+
+### 4) Sonuçlar
+
+* **Düzeltilmiş QT (QTc)** değeri
+* **Klinik yorum** (Normal / Uzamış / Belirgin uzamış)
+* **Referans aralıkları**
 
 ---
 
 ## 🏥 Tıbbi Uyarı
 
-**⚠️ ÖNEMLİ**: Bu uygulama sadece eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+**⚠️ Önemli:** Bu uygulama eğitim amaçlıdır; **tıbbi tanı ve tedavinin yerine geçmez**.
 
-- Tıbbi kararlar için her zaman bir sağlık uzmanına danışın
-- Hesaplanan değerler sadece referans amaçlıdır
-- Klinik kararlar için ek değerlendirme gerekebilir
+* Klinik kararlar için her zaman yetkili bir sağlık profesyoneline danışın.
+* Hesaplanan değerler **yalnızca referans** niteliğindedir.
+* Klinik değerlendirme ve ek tetkikler gerekebilir.
 
 ---
 
 ## 🔧 Teknik Detaylar
 
-### Teknoloji Stack'i
+### Teknoloji Yığını
 
-- **Frontend**: React 19 + TypeScript
-- **Build Tool**: Vite 6
-- **UI Framework**: Tailwind CSS
-- **Mobile**: Capacitor 7
-- **Platform**: Android, iOS, Web
+* **Ön Yüz**: React 19 + TypeScript
+* **Derleme Aracı**: Vite 6
+* **UI**: Tailwind CSS
+* **Mobil**: Capacitor 7
+* **Platformlar**: Android, iOS, Web
 
 ### Proje Yapısı
 
 ```
 QTcalc/
-├── src/                    # Kaynak kodlar
-├── public/                 # Statik dosyalar
-│   ├── favicon/           # Uygulama ikonları
-│   └── QT-RRinterval.png  # EKG örnek görseli
-├── android/                # Android platform dosyaları
-├── capacitor.config.ts     # Capacitor yapılandırması
-└── package.json           # Proje bağımlılıkları
+├── src/                     # Kaynak kod
+├── public/                  # Statik dosyalar
+│   ├── favicon/             # Uygulama ikonları
+│   └── ECGsegments.jpg    # Örnek EKG görseli
+├── android/                 # Android platform dosyaları
+├── capacitor.config.ts      # Capacitor yapılandırması
+└── package.json             # Bağımlılıklar ve komutlar
 ```
 
 ---
 
 ## 📄 Lisans
 
-Bu proje eğitim amaçlı geliştirilmiştir. Tıbbi kullanım için uygun değildir. Geliştirmede Google ve Cursor kullanıldı.
+Bu proje **eğitim amaçlı** geliştirilmiştir; **klinik kullanım için uygun değildir**.
+Geliştirme sürecinde **Google** ve **Cursor** araçlarından yararlanılmıştır.
 
 ---
 
 ## 🤝 Katkıda Bulunma
 
-1. Projeyi fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
+1. Depoyu fork’layın
+2. Özellik dalı açın: `git checkout -b feature/AmazingFeature`
+3. Değişikliklerinizi commit’leyin: `git commit -m 'Add some AmazingFeature'`
+4. Dalı origin’e gönderin: `git push origin feature/AmazingFeature`
 5. Pull Request oluşturun
 
 ---
 
 ## 📞 İletişim
 
-- **Proje**: [Düzeltilmiş QT Hesaplama](https://github.com/turkalpmd/QThesaplama)
-- **Geliştirici**: [ İzzet Türkalp Akbaşlı](https://www.linkedin.com/in/turkalpmd/)
+* **Proje**: [Düzeltilmiş QT Hesaplama](https://github.com/turkalpmd/QThesaplama)
+* **Geliştirici**: [İzzet Türkalp Akbaşlı](https://www.linkedin.com/in/turkalpmd/)
 
 ---
 
 <div align="center">
-  <p>❤️ Tıp dünyasına katkıda bulunmak için geliştirildi</p>
+  <p>❤️ Sağlık hizmetine katkı sunmak için geliştirildi</p>
 </div>
+
