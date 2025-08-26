@@ -280,14 +280,7 @@ const App: React.FC = () => {
                         <p className="text-sm">{interpretation.message}</p>
                     </div>
                     
-                    {/* ECG Example Image */}
-                    <div className="mt-4 pt-4 border-t border-slate-200">
-                         <img 
-                            src="/QT-RRinterval.png"
-                            alt="EKG trasesinde RR ve QT aralıklarını gösteren örnek" 
-                            className="w-full rounded-lg object-contain" 
-                        />
-                    </div>
+
                 </div>
 
                 <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
